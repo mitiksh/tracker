@@ -1,0 +1,92 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Register Account"
+    android:id="@+id/titleRegister"
+    android:layout_centerHorizontal="true"
+    android:padding="20sp"
+    android:layout_marginTop="70sp"
+    android:textSize="28sp"
+    />
+
+    <EditText
+       android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Name"
+        android:id="@+id/user_name"
+        android:layout_below="@+id/titleRegister"
+
+        />
+    <EditText
+
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/user_email"
+        android:hint="Email"
+        android:layout_below="@+id/user_name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_below="@+id/user_email"
+        android:id="@+id/user_phone"
+        android:hint="Phone"
+        android:layout_marginTop="15sp"
+        />
+    <EditText
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_below="@+id/user_phone"
+        android:id="@+id/user_password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_password"
+        android:layout_toLeftOf="@id/signup_button"
+        android:layout_alignTop="@id/signup_button"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:text="Login"
+        android:id="@+id/button_to_login"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/user_password"
+        android:layout_margin="20dp"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/signup_button"
+        android:textColor="#ffff"
+        android:text="create"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/signup_button"
+        android:visibility="invisible"
+        android:id="@+id/register_progressbar"
+        />
+
+
+</RelativeLayout>

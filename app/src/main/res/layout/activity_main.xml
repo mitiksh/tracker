@@ -1,0 +1,38 @@
+<RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#af44"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hello "
+        android:textSize="28dp"
+        android:layout_above="@+id/login"
+        android:layout_marginBottom="30dp"/>
+    <Button
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Login In"
+    android:id="@+id/login"
+    android:backgroundTint="@color/colorPrimary"
+    android:textColor="#ffff"
+    android:layout_centerInParent="true"
+    />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="Signup"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:layout_below="@+id/login"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>
